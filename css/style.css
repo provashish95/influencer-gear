@@ -287,3 +287,28 @@ nav {
 
 
 /* footer section style css end here.......... */
+
+
+/* animation css here........ */
+
+.animation:hover {
+    padding-left: 10px;
+    border-radius: 20px;
+    transform: scaleY(2);
+    transition: transform 2s ease-in-out;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1.5;
+}
+
+@keyframes example {
+    0% {
+        background-color: #EF5354;
+    }
+    75% {
+        background-color: red
+    }
+    100% {
+        background-color: #B4161B;
+    }
+}
