@@ -10,11 +10,32 @@ body {
 }
 
 .container {
-    /* border: 1px solid red; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 }
+
+
+/* common class style css..... */
+
+.button {
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 41px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #E02C6D;
+}
+
+.icon-style {
+    margin-left: 8px;
+}
+
+
+/* common class style css end..... */
 
 
 /* nav style css start here.......... */
@@ -45,6 +66,9 @@ nav {
 
 /* nav style css end here.......... */
 
+
+/* header style css start here..... */
+
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -65,32 +89,6 @@ nav {
     margin: 20px 0;
 }
 
-
-/* common class style css..... */
-
-.button {
-    outline: 0;
-    border: 0;
-    padding: 15px 20px;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 41px;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #E02C6D;
-}
-
-.icon-style {
-    margin-left: 8px;
-}
-
-
-/* common class style css end..... */
-
-.primary-button i {
-    color: white;
-}
-
 .header-right {
     background-image: url('../images/image/Circle-design.svg');
     background-repeat: no-repeat;
@@ -98,7 +96,10 @@ nav {
 }
 
 
-/* company menu style css style start here...... */
+/* header style css end here..... */
+
+
+/* company menu style css  start here...... */
 
 .company-menu {
     display: flex;
@@ -114,12 +115,12 @@ nav {
 }
 
 
-/* company menu style css style end here...... */
+/* company menu style css  end here...... */
 
 
 /* products style css start here......... */
 
-.products-titile {
+.products-title {
     text-align: center;
     margin-top: 100px;
 }
@@ -165,7 +166,6 @@ nav {
 .rating-info span {
     display: inline-block;
     padding: 6px;
-    /* margin-top: 8px; */
     font-size: 15px;
     font-weight: 600;
     color: #5E6366;
@@ -192,7 +192,7 @@ nav {
 }
 
 
-/* products style css start here......... */
+/* products style css end here......... */
 
 
 /* contact style css start here....... */
@@ -328,7 +328,7 @@ nav {
 /* responsive css start here........ */
 
 
-/* for mobile screen ........... */
+/* for mini mobile screen ........... */
 
 @media screen and (max-width: 490px) {
     .menu-bar {
@@ -350,12 +350,21 @@ nav {
         display: none;
     }
     .header,
-    .products {
+    .products,
+    .contact-section {
         grid-template-columns: repeat(1, 1fr);
     }
+    .header-left {
+        order: 2;
+        text-align: center;
+    }
+    .button {
+        font-size: 26px;
+        padding: 22px 60px;
+    }
     .company-menu {
-        flex-direction: column;
-        height: 100vh;
+        flex-wrap: wrap;
+        gap: 15px;
     }
     .toggler-icon {
         display: block;
@@ -363,7 +372,7 @@ nav {
 }
 
 
-/* this is for tablet device.... */
+/* this is for tab device.... */
 
 @media screen and (min-width: 627px) and (max-width: 780px) {
     .menu-bar li {
