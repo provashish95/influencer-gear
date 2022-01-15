@@ -315,6 +315,15 @@ nav {
 
 /* animation css end here........ */
 
+#toggler-nav {
+    display: none;
+}
+
+.toggler-icon {
+    display: none;
+    font-size: 30px;
+}
+
 
 /* responsive css start here........ */
 
@@ -347,6 +356,9 @@ nav {
     .company-menu {
         flex-direction: column;
         height: 100vh;
+    }
+    .toggler-icon {
+        display: block;
     }
 }
 
