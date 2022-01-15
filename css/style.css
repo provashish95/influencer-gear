@@ -32,8 +32,7 @@ nav {
 
 .menu-bar li {
     list-style: none;
-    margin-left: 34px;
-    /* margin: 10px; */
+    margin-left: 10px;
 }
 
 .menu-bar li a {
@@ -312,3 +311,65 @@ nav {
         background-color: #B4161B;
     }
 }
+
+
+/* animation css end here........ */
+
+
+/* responsive css start here........ */
+
+
+/* for mobile screen ........... */
+
+@media screen and (max-width: 490px) {
+    .menu-bar {
+        display: none;
+    }
+    .header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-left {
+        margin: 40px;
+    }
+}
+
+
+/* for mobile screen ........... */
+
+@media screen and (max-width: 626px) {
+    .menu-bar {
+        display: none;
+    }
+    .header,
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .company-menu {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+
+/* this is for tablet device.... */
+
+@media screen and (min-width: 627px) and (max-width: 780px) {
+    .menu-bar li {
+        margin-left: 0px;
+    }
+    .header-left h1 {
+        font-size: 25px;
+    }
+    .header {
+        gap: 0px;
+    }
+    .company-menu {
+        flex-wrap: wrap;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* responsive css start here........ */
